@@ -186,7 +186,7 @@ local highlight_groups = {
     DiffDelete = {fg = red, style = 'reverse'}, -- diff mode: Deleted line
     DiffText = {fg = yellow, style = 'reverse'}, -- diff mode: Changed text within a changed line
     EndOfBuffer = {fg = bg0}, -- filler lines (~) after the last line in the buffer
-    ErrorMsg = {fg = bg0, bg = bg1}, -- error messages on the command line
+    ErrorMsg = {fg = red, bg = bg0}, -- error messages on the command line
     VertSplit = {fg = bg1}, -- the column separating verti-- cally split windows
     Folded = {fg = purple2, bg = bg1, style = 'italic'}, -- line used for closed folds
     FoldColumn = {fg = purple0}, -- 'foldcolumn'
@@ -199,7 +199,7 @@ local highlight_groups = {
     MoreMsg = {fg = yellow1}, -- more-prompt
     NonText = {fg = grey}, -- '~' and '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line).
     Normal = normal, -- normal text
-    Pmenu = {fg = fg5, bg = purple4}, -- Popup menu: normal item.
+    Pmenu = {fg = fg4, bg = purple4}, -- Popup menu: normal item.
     PmenuSel = {fg = fg0, bg = fg6}, -- Popup menu: selected item.
     PmenuSbar = {fg = fg0, bg = bg1}, -- Popup menu: scrollbar.
     PmenuThumb = {fg = fg0, bg = purple3}, -- Popup menu: Thumb of the scrollbar.
@@ -213,7 +213,7 @@ local highlight_groups = {
     SpellLocal = {fg = aqua0, style = 'italic,undercurl'}, -- Word that is recognized by the spellchecker as one that is used in another region. This will be combined with the highlighting used otherwise.
     SpellRare = {fg = purple0, style = 'italic,undercurl'}, -- Word that is recognized by the spellchecker as one that is hardly ever used. spell This will be combined with the highlighting used otherwise.
     StatusLine = {fg = fg1, bg = purple3}, -- status line of current window
-    StatusLineNC = {fg = purple3, bg = purple4}, -- status lines of not-current windows Note: if this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.
+    StatusLineNC = {fg = purple2, bg = purple4}, -- status lines of not-current windows Note: if this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.
     StatusLineTerm = {fg = fg1, bg = purple3}, -- status line of current :terminal window
     StatusLineTermNC = {fg = purple3, bg = purple4}, -- status line of non-current :terminal window
     TabLineFill = {fg = purple, bg = bg1},
